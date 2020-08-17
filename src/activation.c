@@ -1347,7 +1347,7 @@ IDEVICE_ACTIVATION_API idevice_activation_error_t idevice_activation_send_reques
 	}
 
 	*response = tmp_response;
-
+	printf("%s", tmp_response->raw_content);
 	result = IDEVICE_ACTIVATION_E_SUCCESS;
 
 cleanup:
